@@ -1,0 +1,218 @@
+.introducao {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    height: 100vh;
+    padding: 0rem 1.5rem;
+}
+
+h1, p {
+    color: #FFFAFF;
+}
+
+.textoIntroducao {
+    margin: 0 auto;
+}
+
+span {
+    display: inline-block;
+}
+
+.tituloIntroducao {
+    font-size: 3.4375rem;
+    max-width: 35rem;
+    position: relative;
+}
+
+.tituloIntroducao::before, .tituloIntroducao::after {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: rotate(50deg);
+    width: 0.625rem;
+    height: 3.8rem;
+}
+
+.tituloIntroducao::before {
+    z-index: -1;
+    left: 0.15rem;
+    top: 0.1rem;
+    background-color: #FFC107;
+}
+
+.tituloIntroducao::after {
+    z-index: -2;
+    left: 0.8rem;
+    top: 0.4rem;
+    background-color: #F17400;
+}
+
+.subtituloIntroducao {
+    font-size: 1.5rem;
+    max-width: 32rem;
+}
+
+.introducaoLinks {
+    display: flex;
+    justify-content: start;
+    gap: 1.5rem;
+}
+
+.githubLink, .linkedinLink {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;   
+    margin-top: 1.75rem; 
+}
+
+.githubLink {
+    background-image: linear-gradient(to bottom, #FFFAFF, #DCDCDC);
+}
+
+.linkedinLink {
+    background-image: linear-gradient(to bottom, #1565C0, #0F5099);
+}
+
+.githubLink a, .linkedinLink a {
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.githubLink a {
+    color: #263238;
+}
+
+.linkedinLink a {
+    color: #FFFAFF;
+}
+
+.imgIntroducao {
+    max-width: 20rem;
+    max-height: 20rem;
+    animation: float 5s infinite ease-in-out;
+}
+
+.pontoTitulo {
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: #F6F930;
+    border-radius: 50%;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@media (max-width: 900px) {
+    .tituloIntroducao {
+        font-size: 2.5rem;
+        max-width: 25rem;
+        line-height: 3rem;
+    }
+
+    .subtituloIntroducao {
+        font-size: 1rem;
+        max-width: 18rem;
+    }
+
+    .pontoTitulo {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    .tituloIntroducao::before, .tituloIntroducao::after {
+        display: none;
+    }
+
+    .introducaoLinks {
+        gap: 1.25rem;
+    }
+
+    .githubLink, .linkedinLink {
+        margin-top: 1.5rem;
+        padding: 0.25rem 1rem;
+        border-radius: 0.3rem;
+    }
+
+    .githubLink a, .linkedinLink a {
+        font-size: 0.85rem;
+    }
+
+    .imgIntroducao {
+        max-width: 15rem;
+        max-height: 15rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .introducao {
+        grid-template-columns: auto;
+        place-content: center;
+        justify-items: center;
+        gap: 4rem;
+    }
+
+    .tituloIntroducao {
+        text-align: center;
+        font-size: 1.85rem;
+        max-width: 40rem;
+        line-height: 2.5rem;
+    }
+
+    .subtituloIntroducao {
+        text-align: center;
+        font-size: 0.85rem;
+        max-width: 30rem;
+    }
+
+    .pontoTitulo {
+        width: 0.35rem;
+        height: 0.35rem;
+    }
+
+    .introducaoLinks {
+        justify-content: center;
+    }
+
+    .githubLink, .linkedinLink {
+        margin-top: 1.3rem;
+        border-radius: 0.3rem;
+    }
+
+    .githubLink a, .linkedinLink a {
+        font-size: 0.75rem;
+    }
+
+    .imgIntroducao {
+        animation: none;
+    }
+}
+
+@media (max-width: 280px) {
+    .introducao {
+        gap: 2.5rem;
+    }
+    .tituloIntroducao {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .subtituloIntroducao {
+        margin-top: 0.5rem;
+        font-size: 0.65rem;
+    }
+    
+    .imgIntroducao {
+        max-width: 12rem;
+        max-height: 12rem;
+    }
+}

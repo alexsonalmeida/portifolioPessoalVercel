@@ -1,0 +1,281 @@
+.educacao {
+    margin-top: 10rem;
+    background-color: #FFFAFF;
+    padding: 3rem 3rem;
+}
+
+.educacaoIntroducao {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: baseline;
+}
+
+.educacaoTitulo {
+    color: #242424;
+    font-size: 3.125rem;
+}
+
+.educacaoSubTitulo {
+    max-width: 45rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    font-family: Work Sans;
+    line-height: 1.45rem;
+}
+
+.cursosIconesDescricao {
+    display: flex;
+    gap: 4rem;
+}
+
+.cursoIconeCard {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.cursoIconeTexto {
+    color: #242424;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.listaCursos {
+    margin-top: 3.375rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+}
+
+.cursoCard {
+    background-color: #02010A;
+    padding: 1rem 1.5rem;
+    border-radius: 0.35rem;
+    box-shadow: 0.25rem 0.25rem 0.3125rem #00000033;
+}
+
+.cursoTitulo, .cursoInstituicao {
+    color: #F6F930;
+}
+
+.cursoTitulo {
+    font-weight: 700;
+    font-size: 0.9375rem;
+    max-width: 18rem;
+}
+
+.cursoInstituicao {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.cursoInformacoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cursoDescricao {
+    margin-top: 1.75rem;
+    color: #FFFAFF;
+    font-family: Work Sans;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1160px) {
+    .educacao {
+        padding: 2rem 2rem;
+    }
+
+    .educacaoTitulo {
+        font-size: 3rem;
+    }
+
+    .educacaoSubTitulo {
+        max-width: 42rem;
+        font-size: 1.1rem;
+    }
+
+    .cursosIconesDescricao {
+        gap: 3rem;
+    }
+
+    .cursoIconeTexto {
+        font-size: 1.1rem;
+    }
+
+    .cursoCard {
+        padding: 0.75rem 1rem;
+    }
+
+    .cursoTitulo {
+        font-size: 0.9rem;
+        max-width: 15rem;
+    }
+
+    .cursoInstituicao {
+        margin-top: 0.4rem;
+        font-size: 0.7rem;
+    }
+
+    .cursoDescricao {
+        margin-top: 1rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 1020px) {
+    .educacao {
+        padding: 1rem 1.25rem;
+    }
+
+    .educacaoTitulo {
+        font-size: 2.5rem;
+    }
+
+    .educacaoSubTitulo {
+        max-width: 40rem;
+        font-size: 1rem;
+    }
+
+    .cursosIconesDescricao {
+        gap: 2rem;
+    }
+
+    .cursoIconeCard {
+        gap: 0.5rem;
+    }
+
+    .cursoIconeTexto {
+        font-size: 1rem;
+    }
+
+    .iconeCursoStatus {
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+    }
+
+    .listaCursos {
+        margin-top: 3rem;
+        gap: 1.5rem;
+    }
+
+    .cursoCard {
+        padding: 0.6rem 0.75rem;
+    }
+
+    .cursoStatus {
+        max-width: 2.25rem;
+        max-height: 2.25rem;
+    }
+
+    .cursoTitulo {
+        font-size: 0.8rem;
+        max-width: 12rem;
+    }
+
+    .cursoInstituicao {
+        margin-top: 0.35rem;
+        font-size: 0.65rem;
+    }
+
+    .cursoDescricao {
+        margin-top: 0.75rem;
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .listaCursos {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .educacao {
+        padding: 1rem;
+    }
+
+    .educacaoTitulo {
+        font-size: 2rem;
+    }
+
+    .educacaoSubTitulo {
+        max-width: 20rem;
+        font-size: 0.85rem;
+    }
+
+    .cursoIconeTexto {
+        font-size: 0.8rem;
+    }
+
+    .iconeCursoStatus {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+
+    .listaCursos {
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .educacaoIntroducao {
+        grid-template-columns: auto;
+        justify-items: center;
+        gap: 2rem;
+    }
+
+    .educacaoTitulo {
+        text-align: center;
+    }
+
+    .educacaoSubTitulo {
+        max-width: 35rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 570px) {
+    .educacao {
+        padding: 0.5rem;
+    }
+
+    .cursoIconeTexto {
+        font-size: 0.65rem;
+    }
+
+    .iconeCursoStatus {
+        max-width: 1.75rem;
+        max-height: 1.75rem;
+    }
+
+    .listaCursos {
+        grid-template-columns: auto;
+        gap: 0.75rem;
+    }
+
+    .cursoStatus {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+
+    .cursoTitulo {
+        font-size: 0.65rem;
+    }
+
+    .cursoInstituicao {
+        margin-top: 0.1rem;
+        font-size: 0.5rem;
+    }
+
+    .cursoDescricao {
+        margin-top: 0.5rem;
+        font-size: 0.5rem;
+    }
+}

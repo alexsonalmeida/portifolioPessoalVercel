@@ -1,0 +1,30 @@
+/*imports externos*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Work+Sans:ital,wght@0,500;0,600;1,500&display=swap');
+/*imports internos*/
+/* @import "./scrollReview.css"; */
+@import "./header.css";
+@import "./introducao.css";
+@import "./sobreMim.css";
+@import "./habilidades.css";
+@import "./projetos.css";
+@import "./educacao.css";
+@import "./contato.css";
+/*Estilos gerais*/
+
+body {
+    margin: 0rem;
+    background-color: #242424;
+    font-family: Poppins, sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    padding: 0rem;
+}

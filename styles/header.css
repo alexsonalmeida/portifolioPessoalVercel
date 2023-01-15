@@ -1,0 +1,116 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0rem;
+    padding: 1.5rem 3rem;
+    background-color: #242424;
+    z-index: 1;
+    border-bottom: 0.05rem solid #858485;
+}
+
+ul, li {
+    margin: 0rem;
+}
+
+li {
+    display: inline-block;
+}
+
+.navBar {
+    display: flex;
+    gap: 0rem 2.25rem;
+    margin-right: 6rem;
+}
+
+.navBar a {
+    color: #FFFAFF;
+    font-weight: 500;
+    font-size: 1.125rem;
+    position: relative;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navBar a:hover {
+    color: #F6F930;
+    transition: 0.3s;
+}
+
+.navBar a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0.1rem;
+    background-color: #F6F930;
+    left: 0rem;
+    bottom: -0.25rem;
+}
+
+.navBar a:hover::after {
+    transition: 0.4s ease-in-out;
+    width: 100%;
+}
+
+
+
+@media (max-width: 870px) {
+    header {
+        padding: 1rem 2rem;
+    }
+    .navBar {
+        gap: 1.9rem;
+        margin-right: 4.5rem;
+    }
+    .navBar a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 730px) {
+    header {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        padding: 1rem 0rem;
+        gap: 0.8rem;
+    }
+    .navBar {
+        margin-right: 0rem;
+    }
+}
+
+@media (max-width: 580px) {
+    header {
+        gap: 0.5rem;
+    }
+    .logo {
+        width: 4rem;
+    }
+    .navBar a {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navBar {
+        padding: 0rem 0.5rem;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.75rem;
+        justify-content: center;
+    }
+    .navBar a {
+        background-color: #545454;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.15rem;
+        font-size: 0.5rem;
+    }
+
+    .logo {
+        width: 3rem;
+    }
+}

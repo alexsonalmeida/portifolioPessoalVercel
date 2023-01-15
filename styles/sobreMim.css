@@ -1,0 +1,130 @@
+.sobreMim {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-content: center;
+    min-height: 100vh;
+    gap: 3rem;
+    align-items: center;
+}
+
+.tituloSobreMim {
+    text-align: center;
+    grid-column: 1 / -1;
+    font-weight: 600;
+    font-size: 3.125rem;
+}
+
+.textoSobreMim {
+    font-family: Work Sans;
+    display: grid;
+    gap: 0.8rem;    
+    font-size: 1.125rem;
+    max-width: 30rem;
+    line-height: 1.75rem;
+}
+
+.imgSobreMim {
+    max-width: 30rem;
+    max-height: 30rem;
+    justify-self: right;
+}
+
+@media (max-width: 960px) {
+    .sobreMim {
+        gap: 1.5rem;
+        min-height: 70vh;
+    }
+    .tituloSobreMim {
+        font-size: 2.5rem;
+    }
+
+    .textoSobreMim {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        gap: 0.6rem;
+    }
+
+    .imgSobreMim {
+        max-width: 22rem;
+        max-height: 22rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .sobreMim {
+        gap: 0rem
+    }
+
+    .tituloSobreMim {
+        font-size: 2rem;
+    }
+
+    .textoSobreMim {
+        font-size: 0.85rem;
+    }
+
+    .imgSobreMim {
+        max-width: 18rem;
+        max-height: 18rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .sobreMim {
+        grid-template-columns: auto;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .tituloSobreMim {
+        font-size: 1.75rem;
+    }
+
+    .textoSobreMim {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 430px) {
+    .sobreMim {
+        gap: 0.75rem;
+        min-height: min-content;
+    }
+
+    .tituloSobreMim {
+        font-size: 1.5rem;
+    }
+
+    .textoSobreMim {
+        font-size: 0.7rem;
+        text-align: center;
+        line-height: 1.1rem;
+    }
+
+    .imgSobreMim {
+        max-width: 15rem;
+        max-height: 15rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .sobreMim {
+        gap: 0.5rem;
+    }
+
+    .tituloSobreMim {
+        font-size: 1.25rem;
+    }
+
+    .textoSobreMim {
+        font-size: 0.6rem;
+        text-align: center;
+        line-height: 1rem;
+    }
+
+    .imgSobreMim {
+        max-width: 12rem;
+        max-height: 12rem;
+    }
+}
