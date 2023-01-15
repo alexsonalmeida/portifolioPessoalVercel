@@ -127,6 +127,9 @@
 }
 
 @media (max-width: 800px) {
+    .projetos {
+        min-height: 50vh;
+    }
     .projetosTitulo {
         font-size: 2rem;
     }
