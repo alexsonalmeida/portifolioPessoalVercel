@@ -3,7 +3,8 @@ const verMaisProjetosButton = document.querySelector('.verMaisProjetos');
 const linksProjetos = [
     "https://github.com/VictorM-Coder/Goorg-Application",
     "https://alexsonalmeida.github.io/calculadora/",
-    "https://alexsonalmeida.github.io/placar-de-truco/"
+    "https://alexsonalmeida.github.io/placar-de-truco/",
+    "https://alexsonalmeida.github.io/loginpage/"
 ]
 
 const mostrarProjetos = () => {
