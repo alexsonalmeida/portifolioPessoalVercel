@@ -4,7 +4,9 @@ const linksProjetos = [
     "https://github.com/VictorM-Coder/Goorg-Application",
     "https://alexsonalmeida.github.io/calculadora/",
     "https://alexsonalmeida.github.io/placar-de-truco/",
-    "https://alexsonalmeida.github.io/loginpage/"
+    "https://github.com/alexsonalmeida/Octom",
+    "https://github.com/danielft2/sippa-2",
+    "https://github.com/danielft2/sharebook"
 ]
 
 const mostrarProjetos = () => {

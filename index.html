@@ -86,6 +86,14 @@
                         </div >
                         <div class="listHabilidadeItemConteiner">
                             <span class="decoratorMais"></span>
+                            <p class="listHabilidadeItemMais">VueJS</p>
+                        </div >
+                        <div class="listHabilidadeItemConteiner">
+                            <span class="decoratorMais"></span>
+                            <p class="listHabilidadeItemMais">Angular</p>
+                        </div >
+                        <div class="listHabilidadeItemConteiner">
+                            <span class="decoratorMais"></span>
                             <p class="listHabilidadeItemMais">React Native</p>
                         </div>
                         <div class="listHabilidadeItemConteiner">
@@ -171,33 +179,52 @@
                             <p class="descricaoProjeto">Essa é uma aplicação de organização pessoal semelhante ao notion, trello etc. desenvolvida em grupo usando TypeScript, React, Tailwind e electron no front-end e Java com SpringBoot e JPA no back-end, além do uso do banco dados PostgreSQL</p>                            
                         </section>
                     </div>
-                    <div class="cardProject" onclick="navegarParaProjeto(1)">
+                    <div class="cardProject" onclick="navegarParaProjeto(3)">
+                        <div>
+                            <img class="projetoImagem" src="./img/octom.jpg" alt="">  
+                        </div>
+                        <section class="projetoTexto">
+                            <h3 class="tituloProjeto">Octom</h3>
+                            <p class="descricaoProjeto">Uma aplicação de gerenciamento e projetos e atividades em time. Desenvolvida com React, Next.js, TypeScript, NestJS, Prisma e PostgreSQL.</p>                            
+                        </section>
+                    </div>
+                    <div class="cardProject" onclick="navegarParaProjeto(4)">
+                        <div>
+                            <img class="projetoImagem" src="./img/sippa-2.jpg" alt="">  
+                        </div>
+                        <section class="projetoTexto">
+                            <h3 class="tituloProjeto">Sippa 2</h3>
+                            <p class="descricaoProjeto">Uma versão atualizada de uma aplicação interna da UFC para gerenciamento de disciplinas por professores e acesso a envio de atividades e notícias por alunos. Desenvolvida em React e TypeScript no front e NestJS, TypeScript e PostgreSQL no back.</p>                            
+                        </section>
+                    </div>
+                    <div class="cardProject projetoEscondido" onclick="navegarParaProjeto(5)">
+                        <div>
+                            <img class="projetoImagem" src="./img/sharebook.jpg" alt="">  
+                        </div>
+                        <section class="projetoTexto">
+                            <h3 class="tituloProjeto">Sharebook</h3>
+                            <p class="descricaoProjeto">Um app mobile para Android de publicação, pesquisa e planejamento de trocas de livros baseadas em quão próximos estão os usuários. Desenvolvida em Kotlin no front e NestJS, TypeScript, Prisma e PostgreSQL no back.</p>                            
+                        </section>
+                    </div>
+                    <div class="cardProject projetoEscondido" onclick="navegarParaProjeto(1)">
                         <div >
                             <img class="projetoImagem" src="./img/CalculadoraImagem.png" alt="">  
                         </div>
                         <section class="projetoTexto">
                             <h3 class="tituloProjeto">Calculadora</h3>
-                            <p class="descricaoProjeto">Uma calculadora desenvolvida em HTML, CSS e TypeScript. Aqui aprendi mais sobre o posicionamento de elementos na tela com grid e manipulação do DOM.</p>                            
+                            <p class="descricaoProjeto">Uma calculadora desenvolvida em HTML, CSS e TypeScript.</p>                            
                         </section>
                     </div>
-                    <div class="cardProject" onclick="navegarParaProjeto(2)">
+                    <div class="cardProject projetoEscondido" onclick="navegarParaProjeto(2)">
                         <div>
                             <img class="projetoImagem" src="./img/placarDeTrucoImagem.png" alt="">  
                         </div>
                         <section class="projetoTexto">
                             <h3 class="tituloProjeto">Contador de truco</h3>
-                            <p class="descricaoProjeto">Um placar para jogar truco desenvolvido utilizando HTML, CSS e TypeScript. Aqui aprendi sobre passagem de dados para outras páginas e mais sobre manipulação do DOM.</p>                            
+                            <p class="descricaoProjeto">Um placar para jogar truco desenvolvido utilizando HTML, CSS e TypeScript.</p>                            
                         </section>
                     </div>
-                    <div class="cardProject projetoEscondido" onclick="navegarParaProjeto(3)">
-                        <div>
-                            <img class="projetoImagem" src="./img/LoginScreen.png" alt="">  
-                        </div>
-                        <section class="projetoTexto">
-                            <h3 class="tituloProjeto">Tela de Login</h3>
-                            <p class="descricaoProjeto">Uma tela de login criada utilizando HTML, CSS e o framework TailwindCSS. Entre os principais conhecimentos adquiridos nesse projeto, está o aprendizado em como desfrutar melhor das vantagens que o Tailwind proporciona</p>                            
-                        </section>
-                    </div>
+
                 </section>  
                 <button class="verMaisProjetos" onclick="mostrarProjetos()">VER MAIS<img class="iconVermais" src="./img/ArrowBottom.svg" alt=""></button>                                          
             </section>
@@ -215,7 +242,7 @@
                             <div>
                                 <img class="iconeCursoStatus" src="./img/CursoFinalizado.svg" alt="">                        
                             </div>
-                            <p class="cursoIconeTexto">Cursando</p>
+                            <p class="cursoIconeTexto">Concluído</p>
                         </div>
                         <div class="cursoIconeCard">
                             <div>
@@ -233,7 +260,7 @@
                                 <h4 class="cursoInstituicao">Universidade Federal do Ceará</h4>                                
                             </div>
                             <div>
-                                <img class="cursoStatus" src="./img/CursoFinalizado.svg" alt="">
+                                <img class="cursoStatus" src="./img/CursoFinalizado (1).svg" alt="">
                             </div>                            
                         </div>
 
